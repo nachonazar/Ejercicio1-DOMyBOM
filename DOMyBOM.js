@@ -1,4 +1,20 @@
 const crearNumeroAleatorio = () => {
-  const NumeroAleatorio = Math.floor(Math.random() * 100) + 1;
-  console.log("Desde la funcion crear numero aleatorio");
+  console.log(NumeroAleatorio);
 };
+
+const verificarNumero = (e) => {
+  e.preventDefault();
+  console.log(e);
+  const NumeroIngresado = parseInt(document.getElementById("miInput").value);
+  if (NumeroAleatorio === NumeroIngresado) {
+    alert("Adivinaste el numero magico");
+  } else if (NumeroAleatorio > NumeroIngresado) {
+    alert("El numero que tenes que adivinar es mayor al numero que ingresaste");
+  } else if (NumeroAleatorio < NumeroIngresado) {
+    alert("El numero que tenes que adivinar es menor al numero que ingresaste");
+  }
+};
+
+const NumeroAleatorio = Math.floor(Math.random() * 100) + 1;
+const formulario = document.getElementById("miFormulario");
+formulario.addEventListener("submit", verificarNumero);
