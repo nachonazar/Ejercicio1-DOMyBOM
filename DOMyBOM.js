@@ -8,11 +8,13 @@ const verificarNumero = (e) => {
   const NumeroIngresado = parseInt(document.getElementById("miInput").value);
   if (NumeroAleatorio === NumeroIngresado) {
     alert("Adivinaste el numero magico");
+    location.reload();
   } else if (NumeroAleatorio > NumeroIngresado) {
     alert("El numero que tenes que adivinar es mayor al numero que ingresaste");
   } else if (NumeroAleatorio < NumeroIngresado) {
     alert("El numero que tenes que adivinar es menor al numero que ingresaste");
   }
+  formulario.reset();
 };
 
 const NumeroAleatorio = Math.floor(Math.random() * 100) + 1;
