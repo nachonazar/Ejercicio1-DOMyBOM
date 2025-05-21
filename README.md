@@ -14,3 +14,12 @@ Pequeño juego hecho con **Bootstrap** y **JavaScript**, usando manipulación de
 - HTML
 - CSS (Bootstrap)
 - JavaScript (con manejo del DOM)
+
+### 📝 Autor  
+Ignacio Nazar
+
+### 🚀 ¿Cómo utilizar este proyecto?  
+Podés clonar el repositorio y revisar el ejercicio con:
+
+```bash
+git clone https://github.com/nachonazar/Ejercicio1-DOMyBOM.git
