@@ -1,5 +1,7 @@
 const crearNumeroAleatorio = () => {
   console.log(NumeroAleatorio);
+  const input = document.getElementById("miInput");
+  input.focus();
 };
 
 const verificarNumero = (e) => {
